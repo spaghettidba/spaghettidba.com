@@ -20,6 +20,9 @@ pygmentsCodefencesGuessSyntax = true
   readingTime = true
   wordCount = false
 
+[[params.bigimg]]
+  src = "/images/spaghettidba-header.png"
+
 [author]
   name = "spaghettidba"
   website = "https://spaghettidba.com"
@@ -36,9 +39,10 @@ pygmentsCodefencesGuessSyntax = true
     name = "Blog"
     url = "/"
     weight = 1
+
   [[menu.main]]
-    name = "Speaking"
-    url = "/speaking/"
+    name = "About"
+    url = "/about/"
     weight = 2
 
 [markup.goldmark.renderer]

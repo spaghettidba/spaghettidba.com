@@ -44,6 +44,8 @@ NAMESPACES = {
     "content": "http://purl.org/rss/1.0/modules/content/",
     "excerpt": "http://wordpress.org/export/1.2/excerpt/",
 }
+EXCLUDED_PAGE_PATHS = {"/speaking/"}
+CURATED_PAGE_PATHS = {"/about/"}
 
 
 def parse_export(path):
@@ -72,6 +74,10 @@ def parse_export(path):
             continue
         if status != "publish" or post_type not in {"post", "page"}:
             continue
+        if post_type == "page":
+            page_path = urlsplit(item.findtext("link", default="")).path.rstrip("/") + "/"
+            if page_path in EXCLUDED_PAGE_PATHS:
+                continue
         terms = {"category": [], "post_tag": []}
         for term in item.findall("category"):
             domain = term.get("domain")
@@ -97,6 +103,11 @@ def parse_export(path):
 
 def source_url(item):
     return item["link"]
+
+
+def source_path(item):
+    path = urlsplit(source_url(item)).path
+    return path if path.endswith("/") else path + "/"
 
 
 def slug_filename(item):
@@ -348,9 +359,13 @@ def main():
         internal_paths[path] = path if path.endswith("/") else path + "/"
 
     media_urls = {url for url in media if is_upload_url(url)}
+    preserved_pages = 0
     for section, items in (("posts", posts), ("pages", pages)):
         remove_stale_imports(section, items)
         for item in items:
+            if section == "pages" and source_path(item) in CURATED_PAGE_PATHS:
+                preserved_pages += 1
+                continue
             rendered = write_content(item, section, internal_paths)
             media_urls.update(
                 match.group(0).rstrip(".,);")
@@ -366,7 +381,9 @@ def main():
             if error:
                 errors.append(error)
 
-    print(f"Imported {len(posts)} published posts and {len(pages)} published pages.")
+    print(f"Imported {len(posts)} published posts and {len(pages) - preserved_pages} source pages.")
+    if preserved_pages:
+        print(f"Preserved {preserved_pages} locally curated page(s).")
     print(f"Downloaded {len(media_urls) - len(errors)} of {len(media_urls)} referenced media files.")
     if errors:
         for error in errors:

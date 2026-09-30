@@ -1,3 +1,57 @@
+.navbar-custom {
+  min-height: 36px;
+}
+
+.navbar-custom .navbar-brand {
+  height: 36px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 20px;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.navbar-custom .navbar-toggle {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 7px 8px;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.intro-header.big-img {
+  height: min(21.28vw, 200px);
+  min-height: 0;
+  padding: 0;
+  margin-top: 36px;
+  background-color: #20458f;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  -o-background-size: contain;
+}
+
+.intro-header.big-img .page-heading {
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .blog-post img,
 .post-entry img,
 .blog-post video,
@@ -10,6 +64,13 @@
 .blog-post img,
 .post-entry img {
   height: auto;
+}
+
+.about-photo {
+  float: left;
+  width: min(300px, 45%);
+  margin: 0 1.75em 1.5em 0;
+  border-radius: 4px;
 }
 
 .video-embed {
@@ -60,4 +121,13 @@
 .blog-post pre,
 .post-entry pre {
   overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .about-photo {
+    float: none;
+    display: block;
+    width: min(100%, 240px);
+    margin: 0 auto 1.5em;
+  }
 }

@@ -6,20 +6,26 @@ source_url: "http://spaghettidba.com/about/"
 url: "/about/"
 ---
 
-<h2><strong>Gianluca Sartori</strong></h2>
-I'm a SQL Server and Oracle DBA based in Conegliano, Italy. I work with SQL Server since version 7, and Oracle since 11g. My interests go from database design and architecture to performance tuning.
+## Gianluca Sartori
 
-I have worked for many years as a Java, .NET, Visual Basic and ASP developer and then decided to focus on the database side of the IT.
+**Founder and CEO of [Quantumdatis](https://quantumdatis.com/) · Microsoft Data Platform MVP**
 
-Now I'm working with my own consulting company - SQLConsulting.it.
+<img class="about-photo" src="/wp-content/uploads/GianlucaSartori.png" alt="Portrait of Gianluca Sartori" width="1000" height="1500" loading="lazy">
 
-More information can be found here:
-<ul>
-	<li><a title="SQLconsulting" href="http://www.sqlconsulting.it">SQLConsulting.it</a></li>
-	<li><a title="Linkedin" href="http://it.linkedin.com/pub/gianluca-sartori/23/50b/a12">Linkedin</a></li>
-	<li><a title="Twitter" href="http://twitter.com/#!/spaghettidba">Twitter</a></li>
-</ul>
-<h2><strong>The SpaghettiDBA</strong></h2>
-"Spaghetti" is generally used as a pejorative term for source code, but (hopefully) feeding you with low-quality code is not the purpose of this Blog.  My intent is to provide some recipes for your daily database cooking, with a bit of Italian touch.
+I have more than 20 years of experience designing, managing, diagnosing, and optimizing Microsoft data platforms. I have worked hands-on with business-critical production environments and shared practical experience at international conferences. My technical articles and community work have earned me Microsoft Data Platform MVP recognition for 13 years.
+
+My areas of focus include:
+
+- SQL Server performance and architecture
+- High availability and disaster recovery
+- Migration, automation, and mentoring
+
+I am a SQL Server and Oracle DBA based in Conegliano, Italy. I have worked with SQL Server since version 7 and Oracle since 11g. Before focusing on data platforms, I worked as a Java, .NET, Visual Basic, and ASP developer.
+
+I also build and share open-source tools with the data community, including [WorkloadTools](https://github.com/SpaghettiDBA/WorkloadTools) and [XESmartTarget](https://github.com/SpaghettiDBA/XESmartTarget). You can find my [conference sessions on Sessionize](https://sessionize.com/spaghettidba/) and more code on [GitHub](https://github.com/SpaghettiDBA).
+
+## The SpaghettiDBA
+
+"Spaghetti" is generally used as a pejorative term for source code, but (hopefully) feeding you with low-quality code is not the purpose of this blog. My intent is to provide recipes for your daily database cooking, with a bit of an Italian touch.
 
 Help yourself.

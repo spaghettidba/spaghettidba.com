@@ -28,7 +28,7 @@ hugo
 
 The archive contains published WordPress posts and pages, with referenced WordPress uploads stored locally under `static/wp-content/uploads/`. The source WXR export is intentionally not tracked; it may contain unpublished drafts or private posts.
 
-The supplied export includes 121 published posts, 3 published pages, and 327 media attachments.
+The supplied WXR export contains 121 published posts, 3 published pages, and 327 media attachments. The Speaking page is omitted; the About page is maintained locally and preserved during imports.
 
 ```powershell
 python scripts\import_wordpress.py path\to\wordpress-export.xml
