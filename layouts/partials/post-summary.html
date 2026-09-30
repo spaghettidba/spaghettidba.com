@@ -1,5 +1,0 @@
-<article class="post-summary">
-  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-  <p class="article-date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>
-  {{ with .Description }}<p>{{ . }}</p>{{ else }}<p>{{ .Summary | plainify | htmlUnescape | truncate 240 }}</p>{{ end }}
-</article>

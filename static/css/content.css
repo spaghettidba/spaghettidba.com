@@ -1,0 +1,63 @@
+.blog-post img,
+.post-entry img,
+.blog-post video,
+.post-entry video,
+.blog-post iframe,
+.post-entry iframe {
+  max-width: 100%;
+}
+
+.blog-post img,
+.post-entry img {
+  height: auto;
+}
+
+.video-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin: 1.5em 0;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.wp-caption {
+  width: max-content;
+  max-width: 100%;
+}
+
+.wp-caption.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption.alignleft {
+  float: left;
+  margin-right: 1.5rem;
+}
+
+.wp-caption.alignright {
+  float: right;
+  margin-left: 1.5rem;
+}
+
+.wp-caption img {
+  display: block;
+}
+
+.wp-caption-text {
+  color: #667085;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-top: 0.4em;
+}
+
+.blog-post pre,
+.post-entry pre {
+  overflow-x: auto;
+}

@@ -1,11 +1,28 @@
 baseURL = "https://spaghettidba.com/"
 languageCode = "en-us"
 title = "spaghettidba"
+theme = "beautifulhugo"
 enableRobotsTXT = true
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
 
 [params]
   description = "Italian recipes for your daily database cooking"
-  author = "spaghettidba"
+  subtitle = "Italian recipes for your daily database cooking"
+  homeTitle = "spaghettidba"
+  mainSections = ["posts"]
+  dateFormat = "January 2, 2006"
+  comments = false
+  socialShare = false
+  useHLJS = false
+  showRelatedPosts = true
+  readingTime = true
+  wordCount = false
+
+[author]
+  name = "spaghettidba"
+  website = "https://spaghettidba.com"
 
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
@@ -16,7 +33,7 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = "Blog"
     url = "/"
     weight = 1
   [[menu.main]]

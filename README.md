@@ -2,6 +2,14 @@
 
 A Hugo archive of the public posts and pages from [spaghettidba.com](https://spaghettidba.com/).
 
+## Theme
+
+The site uses Beautiful Hugo v3.3.0 as a Git submodule. This release is pinned to work with the Hugo 0.110 version available in the current environment. Initialize the theme after cloning with:
+
+```powershell
+git submodule update --init --recursive
+```
+
 ## Run locally
 
 Install Hugo, then start the development server:
