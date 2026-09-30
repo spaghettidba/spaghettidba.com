@@ -188,11 +188,28 @@ body {
   overflow-x: auto;
 }
 
+.blog-post .gist .blob-code-inner {
+  font-size: 14px;
+}
+
+.blog-post .gist .blob-code,
+.blog-post .gist .blob-num {
+  line-height: 1.5;
+}
+
+.blog-post .gist .gist-data {
+  overflow-x: auto;
+}
+
 @media (max-width: 600px) {
   .about-photo {
     float: none;
     display: block;
     width: min(100%, 240px);
     margin: 0 auto 1.5em;
+  }
+
+  .blog-post .gist .blob-code-inner {
+    font-size: 13px;
   }
 }
