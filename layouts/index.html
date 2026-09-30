@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <section class="intro">
+    <p class="eyebrow">Italian recipes for your daily database cooking</p>
+    <h1>Welcome to spaghettidba</h1>
+    <p>Notes, tools, and recipes for SQL Server and the data community.</p>
+  </section>
+  <section aria-labelledby="recent-posts">
+    <h2 id="recent-posts">Recent posts</h2>
+    {{ $pages := where site.RegularPages "Section" "posts" }}
+    {{ range first 10 $pages.ByDate.Reverse }}
+      {{ partial "post-summary.html" . }}
+    {{ end }}
+    <p class="more-link"><a href="{{ "posts/" | relURL }}">Browse all posts &rarr;</a></p>
+  </section>
+{{ end }}

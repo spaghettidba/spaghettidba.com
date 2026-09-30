@@ -1,0 +1,28 @@
+baseURL = "https://spaghettidba.com/"
+languageCode = "en-us"
+title = "spaghettidba"
+enableRobotsTXT = true
+
+[params]
+  description = "Italian recipes for your daily database cooking"
+  author = "spaghettidba"
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Speaking"
+    url = "/speaking/"
+    weight = 2
+
+[markup.goldmark.renderer]
+  unsafe = true
