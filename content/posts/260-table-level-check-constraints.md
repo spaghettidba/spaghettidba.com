@@ -201,3 +201,7 @@ The constraint does not include any reference to "anotherColumn", so it does not
 This means that what Microsoft calls a table level CHECK constraint is something that does not really exist and a better name for it would be "Multicolumn CHECK constraint".
 
 The main thing to keep in mind is that if we want the constraint to check the data regardless of the column getting modified we MUST include ALL the columns of the table in the constraint definition.
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-13073" class="archived-comment"><article><header><strong>daveboltman</strong> <time datetime="2018-09-11T17:15:23Z">September 11, 2018 at 18:15</time></header><section class="archived-comment-content">Brilliant into - thank you.<br><br>It is good to be aware that even including all the columns in the constraint definition, it can still by bypassed under certain conditions. See more or less pages 192 to 212 of Alex Kuznetsov's excellent book Defensive Database Programming (from here <br>https://www.red-gate.com/library/defensive-database-programming)</section></article></li></ol></details>
+</div>

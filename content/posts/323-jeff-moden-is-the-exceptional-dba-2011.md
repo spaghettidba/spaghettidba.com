@@ -25,3 +25,7 @@ The exceptional DBA 2011 Jeff Moden will receive:
 	<li>a copy of Red Gate’s <a href="http://www.red-gate.com/products/SQL_Professional_Toolbelt/index.htm">SQL Toolbelt</a></li>
 </ul>
 Congratulations Jeff, well deserved.
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (2)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-927" class="archived-comment"><article><header><strong>ColdCoffee</strong> <time datetime="2011-09-14T15:46:08Z">September 14, 2011 at 16:46</time></header><section class="archived-comment-content">Wow... Congrats Jeff... i am so happy for you :)</section></article></li><li id="wordpress-comment-928" class="archived-comment"><article><header><strong>Dukagjin Maloku</strong> <time datetime="2011-09-19T06:29:46Z">September 19, 2011 at 07:29</time></header><section class="archived-comment-content">Congrats to him, really he deserve it!</section></article></li></ol></details>
+</div>

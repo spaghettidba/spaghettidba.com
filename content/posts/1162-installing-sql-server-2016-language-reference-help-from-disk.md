@@ -104,3 +104,7 @@ When done, click the "Update" button.
 </ol>
 </ol>
 Here it is, nice and easy. Hope it works for you too.
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-9869" class="archived-comment"><article><header><strong>Alberto Federico Turelli</strong> <time datetime="2016-10-23T08:27:35Z">October 23, 2016 at 09:27</time></header><section class="archived-comment-content">Yet another nice tutorial, @spaghettidba!<br>I planned to follow everything step by step, but I ended up skipping item 3 (setting Help Preference) because SSDT installation reset SSMS settings. I got no crash, though, and now everything works like a charm.<br><br>Thanks!<br><br>Alberto</section></article></li></ol></details>
+</div>

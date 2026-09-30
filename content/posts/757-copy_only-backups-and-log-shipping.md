@@ -68,3 +68,7 @@ That means that there’s little or no point in taking COPY_ONLY transaction log
 When log shipping is used, the secondary server is the only backup you can have, unless you keep the TLOG backups or use your backup tool directly to ship the logs.
 
 Why on earth should one take a COPY_ONLY TLOG backup (more than one at least) is beyond my comprehension, but that's a whole different story.
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (2)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-12224" class="archived-comment"><article><header><strong>Azathoth</strong> <time datetime="2018-01-22T16:02:08Z">January 22, 2018 at 17:02</time></header><section class="archived-comment-content">Thanks for this article.  It saved me a lot of what would have been wasted effort.</section></article></li><li id="wordpress-comment-13092" class="archived-comment"><article><header><strong>Bubi</strong> <time datetime="2018-09-18T10:20:13Z">September 18, 2018 at 11:20</time></header><section class="archived-comment-content">if you take copy only backup BEFORE regular backup you will not break the chain</section></article></li></ol></details>
+</div>

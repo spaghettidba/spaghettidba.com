@@ -290,3 +290,7 @@ IF NOT EXISTS ( SELECT * FROM sys.dm_xe_sessions WHERE name = 'Recipe01')
 <!-- wp:paragraph -->
 <p>In this recipe you familiarized with XESmartTarget and had a glimpse of its capabilities. The next recipe will introduce more capabilities and showcase more features of the JSON configuration format. Stay tuned!</p>
 <!-- /wp:paragraph -->
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (2)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-45950" class="archived-comment"><article><header><strong>anon fremdly</strong> <time datetime="2024-07-09T13:50:10Z">July 9, 2024 at 14:50</time></header><section class="archived-comment-content"><br><p>Off topic -  thanks for your sqlbits presentation on SQL Server 2022 Time Series. Imo high on usability (lucid &amp; useful). It is getting me into this from older SQL Server.  </p><br></section></article><ol class="archived-comment-replies"><li id="wordpress-comment-45951" class="archived-comment"><article><header><strong>spaghettidba</strong> <time datetime="2024-07-09T13:51:12Z">July 9, 2024 at 14:51</time></header><section class="archived-comment-content"><br><p>Always happy to help!</p><br></section></article></li></ol></li></ol></details>
+</div>

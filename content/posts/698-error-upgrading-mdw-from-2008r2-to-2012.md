@@ -82,3 +82,7 @@ With the MDW in its correct state, the upgrade scripts completed without errors 
 Jokes aside, I caught my error in a test environment and I'm happy it was not in production.
 
 As the saying goes, better safe than sorry.
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-10150" class="archived-comment"><article><header><strong>Johnson</strong> <time datetime="2016-12-28T06:03:10Z">December 28, 2016 at 07:03</time></header><section class="archived-comment-content">Great, This is so chock full of users information and the resources you provided was helpful to me. ThereI found an informative article explaining rebuilding of master database in steps.<br>http://www.sqlmvp.org/rebuild-master-database-without-backup/</section></article></li></ol></details>
+</div>

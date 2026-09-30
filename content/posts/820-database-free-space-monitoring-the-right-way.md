@@ -198,3 +198,7 @@ I am sure that there are smarter scripts around that calculate it correctly and 
 Last time it happened to me it was a late saturday night and, while I really love my job, I can come up with many better ways to spend my saturday night.
 
 I&#039;m pretty sure you do as well.
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-34053" class="archived-comment"><article><header><strong>John Cameron</strong> <time datetime="2020-10-09T10:06:22Z">October 9, 2020 at 11:06</time></header><section class="archived-comment-content">Very helpful, thanks. I was looking to create something similar and had gone down the same route of putting the data from sys.master_files into a temp table, but you have already solved a couple of issues I was hitting.</section></article></li></ol></details>
+</div>

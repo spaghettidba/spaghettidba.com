@@ -1,3 +1,7 @@
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .navbar-custom {
   min-height: 36px;
 }
@@ -50,6 +54,67 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.giscus-comments {
+  margin-top: 2rem;
+}
+
+.archived-comments {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.archived-comments summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.archived-comments-note {
+  margin: 0.75rem 0;
+  color: #667085;
+  font-size: 0.9em;
+}
+
+.archived-comments-list {
+  padding-left: 1.5rem;
+}
+
+.archived-comment {
+  margin: 1rem 0;
+}
+
+.archived-comment article {
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.archived-comment header {
+  margin-bottom: 0.4rem;
+  color: #667085;
+  font-size: 0.9em;
+}
+
+.archived-comment header strong {
+  color: #404040;
+}
+
+.archived-comment-content {
+  overflow-wrap: anywhere;
+}
+
+.archived-comment-content p:last-child {
+  margin-bottom: 0;
+}
+
+.archived-comment-replies {
+  margin-top: 0.65rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e5e7eb;
+  list-style: none;
 }
 
 .blog-post img,

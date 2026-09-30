@@ -212,3 +212,7 @@ In the end, SSMS settings are saved in the profile folder, which we already have
 	<li><a href="http://technet.microsoft.com/en-us/sysinternals/bb896768">Sysinternals Junction</a></li>
 	<li><a href="http://www.tenox.tc/out/#regln">RegLN</a></li>
 </ul>
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (2)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-3" class="archived-comment"><article><header><strong>Brandie Tarvin</strong> <time datetime="2011-03-10T13:29:31Z">March 10, 2011 at 14:29</time></header><section class="archived-comment-content">I'm not so sure about the Russian Roulette thing with multiple SSMS windows. It seems to me that SSMS opens a double-clicked file to the SSMS window you last had opened or clicked in. I'm working on SQL 2k5 and that's what it does to me, anyhow.</section></article><ol class="archived-comment-replies"><li id="wordpress-comment-4" class="archived-comment"><article><header><strong>spaghettidba</strong> <time datetime="2011-03-10T13:55:53Z">March 10, 2011 at 14:55</time></header><section class="archived-comment-content">Thank you for the tip, Brandie. I have always suspected it was like that, but it happened to me sometimes that the wrong SSMS received the file. Having a separate desktop for my sysadmin user helps a lot.</section></article></li></ol></li></ol></details>
+</div>

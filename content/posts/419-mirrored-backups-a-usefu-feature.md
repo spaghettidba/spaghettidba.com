@@ -97,3 +97,7 @@ Keeping in mind that:
 	<li>There’s no GUI in SSMS backup dialog, nor in Maintenance Plans</li>
 </ul>
 …I think I could live without this feature. At least, this is not one of the countless reasons why I would prefer Enterprise over cheaper editions.
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-32029" class="archived-comment"><article><header><strong>Sky - Saint</strong> <time datetime="2020-01-07T01:18:57Z">January 7, 2020 at 02:18</time></header><section class="archived-comment-content">Very good, thanks for all.</section></article></li></ol></details>
+</div>

@@ -4,6 +4,8 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import argparse
 from html import escape, unescape
+from html.parser import HTMLParser
+from datetime import datetime
 from pathlib import Path
 import json
 import re
@@ -46,6 +48,200 @@ NAMESPACES = {
 }
 EXCLUDED_PAGE_PATHS = {"/speaking/"}
 CURATED_PAGE_PATHS = {"/about/"}
+ALLOWED_COMMENT_TAGS = {
+    "a", "b", "blockquote", "br", "code", "del", "em", "i", "li",
+    "ol", "p", "pre", "s", "span", "strong", "sub", "sup", "u", "ul",
+}
+VOID_COMMENT_TAGS = {"br"}
+BLOCKED_COMMENT_TAGS = {"iframe", "object", "script", "style", "svg"}
+ARCHIVED_COMMENTS_START = "<!-- archived WordPress comments: start -->"
+ARCHIVED_COMMENTS_END = "<!-- archived WordPress comments: end -->"
+
+
+class CommentHTMLSanitizer(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.output = []
+        self.open_tags = []
+        self.blocked_tags = []
+
+    def handle_starttag(self, tag, attrs):
+        if self.blocked_tags:
+            if tag in BLOCKED_COMMENT_TAGS:
+                self.blocked_tags.append(tag)
+            return
+        if tag in BLOCKED_COMMENT_TAGS:
+            self.blocked_tags.append(tag)
+            return
+        if tag not in ALLOWED_COMMENT_TAGS:
+            return
+
+        if tag == "a":
+            href = dict(attrs).get("href", "").strip()
+            parsed = urlsplit(href)
+            safe_href = (
+                parsed.scheme.lower() in {"http", "https", "mailto"}
+                or (not parsed.scheme and not href.startswith(("//", "\\\\")))
+            )
+            if href and safe_href:
+                self.output.append(
+                    f'<a href="{escape(href, quote=True)}" '
+                    'rel="nofollow ugc noopener noreferrer">'
+                )
+            else:
+                self.output.append("<a>")
+        else:
+            self.output.append(f"<{tag}>")
+
+        if tag not in VOID_COMMENT_TAGS:
+            self.open_tags.append(tag)
+
+    def handle_endtag(self, tag):
+        if self.blocked_tags:
+            if tag == self.blocked_tags[-1]:
+                self.blocked_tags.pop()
+            return
+        if tag not in self.open_tags:
+            return
+        while self.open_tags:
+            open_tag = self.open_tags.pop()
+            self.output.append(f"</{open_tag}>")
+            if open_tag == tag:
+                break
+
+    def handle_data(self, data):
+        if not self.blocked_tags:
+            escaped = escape(data, quote=False)
+            escaped = escaped.replace("\r\n", "\n").replace("\r", "\n")
+            self.output.append(escaped.replace("\n", "<br>"))
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in VOID_COMMENT_TAGS:
+            self.handle_endtag(tag)
+
+    def render(self, source):
+        self.feed(source)
+        self.close()
+        while self.open_tags:
+            self.output.append(f"</{self.open_tags.pop()}>")
+        return "".join(self.output).strip()
+
+
+def parse_comments(item):
+    comments = []
+    for comment in item.findall("wp:comment", NAMESPACES):
+        comment_type = comment.findtext("wp:comment_type", default="", namespaces=NAMESPACES)
+        approved = comment.findtext("wp:comment_approved", default="", namespaces=NAMESPACES)
+        if approved != "1" or comment_type not in {"", "comment"}:
+            continue
+        comments.append({
+            "id": comment.findtext("wp:comment_id", default="", namespaces=NAMESPACES),
+            "parent_id": comment.findtext("wp:comment_parent", default="0", namespaces=NAMESPACES),
+            "author": comment.findtext("wp:comment_author", default="", namespaces=NAMESPACES),
+            "date": comment.findtext("wp:comment_date", default="", namespaces=NAMESPACES),
+            "date_gmt": comment.findtext("wp:comment_date_gmt", default="", namespaces=NAMESPACES),
+            "content": comment.findtext("wp:comment_content", default="", namespaces=NAMESPACES),
+        })
+    return comments
+
+
+def comment_date_markup(comment):
+    local_date = comment["date"]
+    try:
+        local_datetime = datetime.strptime(local_date, "%Y-%m-%d %H:%M:%S")
+        display_date = (
+            f"{local_datetime.strftime('%B')} {local_datetime.day}, "
+            f"{local_datetime.year} at {local_datetime.strftime('%H:%M')}"
+        )
+        machine_date = local_datetime.isoformat()
+    except ValueError:
+        display_date = local_date
+        machine_date = local_date
+
+    gmt_date = comment["date_gmt"]
+    if gmt_date and not gmt_date.startswith("0000-00-00"):
+        try:
+            machine_date = datetime.strptime(
+                gmt_date, "%Y-%m-%d %H:%M:%S"
+            ).strftime("%Y-%m-%dT%H:%M:%SZ")
+        except ValueError:
+            pass
+    return (
+        f'<time datetime="{escape(machine_date, quote=True)}">'
+        f"{escape(display_date, quote=False)}</time>"
+    )
+
+
+def render_archived_comment(comment, children, internal_paths):
+    comment_id = comment["id"] or "unknown"
+    anchor = f"wordpress-comment-{comment_id}"
+    body = URL_PATTERN.sub(
+        lambda match: rewrite_url(match, internal_paths),
+        comment["content"],
+    )
+    content = CommentHTMLSanitizer().render(body)
+    author = escape(comment["author"] or "Anonymous", quote=False)
+    rendered = (
+        f'<li id="{escape(anchor, quote=True)}" class="archived-comment">'
+        '<article>'
+        f'<header><strong>{author}</strong> {comment_date_markup(comment)}</header>'
+        f'<section class="archived-comment-content">{content}</section>'
+        "</article>"
+    )
+    if children[comment_id]:
+        rendered += '<ol class="archived-comment-replies">'
+        rendered += "".join(
+            render_archived_comment(child, children, internal_paths)
+            for child in children[comment_id]
+        )
+        rendered += "</ol>"
+    return rendered + "</li>"
+
+
+def archived_comments_html(comments, internal_paths):
+    by_id = {comment["id"]: comment for comment in comments if comment["id"]}
+    children = {comment_id: [] for comment_id in by_id}
+    roots = []
+
+    for comment in comments:
+        comment_id = comment["id"]
+        parent_id = comment["parent_id"]
+        current_parent = parent_id
+        seen = {comment_id}
+        has_parent_cycle = False
+        while current_parent in by_id:
+            if current_parent in seen:
+                has_parent_cycle = True
+                break
+            seen.add(current_parent)
+            current_parent = by_id[current_parent]["parent_id"]
+
+        if parent_id in by_id and parent_id != comment_id and not has_parent_cycle:
+            children[parent_id].append(comment)
+        else:
+            roots.append(comment)
+
+    sort_key = lambda comment: (comment["date"], int(comment["id"] or 0))
+    roots.sort(key=sort_key)
+    for replies in children.values():
+        replies.sort(key=sort_key)
+
+    rendered_roots = "".join(
+        render_archived_comment(comment, children, internal_paths)
+        for comment in roots
+    )
+    count = len(comments)
+    return (
+        '\n\n<div class="archived-comments-container">\n'
+        '<details class="archived-comments">'
+        f"<summary>Archived WordPress comments ({count})</summary>"
+        '<p class="archived-comments-note">'
+        "Historical comments from the original site; this archive is read-only."
+        "</p>"
+        f'<ol class="archived-comments-list">{rendered_roots}</ol>'
+        "</details>\n</div>\n"
+    )
 
 
 def parse_export(path):
@@ -94,6 +290,7 @@ def parse_export(path):
             "excerpt": item.findtext("excerpt:encoded", default="", namespaces=NAMESPACES),
             "categories": sorted(set(terms["category"])),
             "tags": sorted(set(terms["post_tag"])),
+            "comments": parse_comments(item),
         }
         (posts if post_type == "post" else pages).append(record)
     if not posts:
@@ -272,6 +469,10 @@ def plain_text(html):
 def write_content(item, section, internal_paths=None):
     internal_paths = internal_paths or {}
     rendered = content_html(item, internal_paths)
+    if item["comments"]:
+        rendered = rendered.rstrip() + archived_comments_html(
+            item["comments"], internal_paths
+        )
     filename = slug_filename(item)
     target_dir = CONTENT_DIR / section
     target_dir.mkdir(parents=True, exist_ok=True)
@@ -299,6 +500,29 @@ def write_content(item, section, internal_paths=None):
     target = target_dir / filename
     target.write_text("\n".join(front_matter) + "\n\n" + rendered.strip() + "\n", encoding="utf-8")
     return rendered
+
+
+def update_curated_page_comments(item, internal_paths):
+    target = CONTENT_DIR / "pages" / slug_filename(item)
+    content = target.read_text(encoding="utf-8")
+    has_start = ARCHIVED_COMMENTS_START in content
+    has_end = ARCHIVED_COMMENTS_END in content
+    if has_start != has_end:
+        raise ValueError(f"Incomplete archived-comment markers in {target}")
+    if has_start:
+        start = content.index(ARCHIVED_COMMENTS_START)
+        end = content.index(ARCHIVED_COMMENTS_END, start) + len(ARCHIVED_COMMENTS_END)
+        content = content[:start] + content[end:]
+    if item["comments"]:
+        content = (
+            content.rstrip()
+            + "\n\n"
+            + ARCHIVED_COMMENTS_START
+            + archived_comments_html(item["comments"], internal_paths)
+            + ARCHIVED_COMMENTS_END
+            + "\n"
+        )
+    target.write_text(content, encoding="utf-8")
 
 
 def remove_stale_imports(section, items):
@@ -365,6 +589,7 @@ def main():
         for item in items:
             if section == "pages" and source_path(item) in CURATED_PAGE_PATHS:
                 preserved_pages += 1
+                update_curated_page_comments(item, internal_paths)
                 continue
             rendered = write_content(item, section, internal_paths)
             media_urls.update(
@@ -382,6 +607,15 @@ def main():
                 errors.append(error)
 
     print(f"Imported {len(posts)} published posts and {len(pages) - preserved_pages} source pages.")
+    archive_items = posts + pages
+    archived_comments = sum(len(item["comments"]) for item in archive_items)
+    items_with_comments = sum(bool(item["comments"]) for item in archive_items)
+    if archived_comments:
+        print(
+            f"Archived {archived_comments} approved comments "
+            f"across {items_with_comments} posts and pages "
+            "(pingbacks and trackbacks excluded)."
+        )
     if preserved_pages:
         print(f"Preserved {preserved_pages} locally curated page(s).")
     print(f"Downloaded {len(media_urls) - len(errors)} of {len(media_urls)} referenced media files.")

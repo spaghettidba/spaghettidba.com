@@ -62,3 +62,7 @@ Now you can focus on Powershell itself, not on memorizing ASCII codes!
 <blockquote><strong>EDIT 20/09/2011: </strong>In the first version of this post I suggested remapping the e-mail key to the § symbol (which is probably the most useless key on my keyboard), but, actually that would have mapped the <strong>WHOLE</strong> key, thus loosing the ability to type the "ù" char. That's why I changed this post and decided to remap the ScrollLock key instead. My apologies to those who followed my advice and lost their "ù".</blockquote>
 <blockquote><strong>EDIT 21/03/2019: </strong>The <a href="https://support.microsoft.com/en-us/help/823010/the-microsoft-keyboard-layout-creator">Microsoft Keyboard Layout Creator</a> can help you create a custom keyboard layout that contains the backtick character mapped to any key combination you find appropriate. Go give it a try.</blockquote>
 &nbsp;
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-34481" class="archived-comment"><article><header><strong>Replacement Laptop Keys</strong> <time datetime="2020-11-27T04:08:46Z">November 27, 2020 at 05:08</time></header><section class="archived-comment-content">Thanks for sharing such an informative article on backtick keys with us.</section></article></li></ol></details>
+</div>

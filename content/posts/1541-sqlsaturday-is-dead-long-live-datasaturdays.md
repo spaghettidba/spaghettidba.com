@@ -43,3 +43,7 @@ tags: ["PASS", "SQLSaturday"]
 <!-- wp:paragraph -->
 <p>Come and help us, be a part of the solution</p>
 <!-- /wp:paragraph -->
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-35417" class="archived-comment"><article><header><strong>billdba</strong> <time datetime="2021-03-30T15:46:38Z">March 30, 2021 at 16:46</time></header><section class="archived-comment-content">Sounds like a great idea!  We get so bogged down in the daily, now, it'll be good to focus on a bigger picture again!!</section></article></li></ol></details>
+</div>

@@ -39,3 +39,7 @@ To verify that the service account user has been hidden from your logon screen, 
 That's it! No more service accounts on your logon screen.
 
 If you want to re-enable those account on the logon screen, just change the DWORD value to 1 (one).
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (2)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-1077" class="archived-comment"><article><header><strong>Dukagjin Maloku</strong> <time datetime="2012-04-05T10:04:26Z">April 5, 2012 at 11:04</time></header><section class="archived-comment-content">Thanks for the post buddy, useful info!</section></article><ol class="archived-comment-replies"><li id="wordpress-comment-1078" class="archived-comment"><article><header><strong>spaghettidba</strong> <time datetime="2012-04-05T10:24:09Z">April 5, 2012 at 11:24</time></header><section class="archived-comment-content">Thanks to you, my friend!</section></article></li></ol></li></ol></details>
+</div>

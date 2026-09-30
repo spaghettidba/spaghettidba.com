@@ -129,3 +129,7 @@ There are also many flavors of EAV, with different degrees of evil involved. Som
 The EAV design comes with the intent of solving a real world problem that doesn’t have a definitive answer in the relational model. In partial defense of the “generalizers”, it has to be said that this is a challenging problem. Nevertheless, like Dante put his political enemies to hell, I am the “poet” and I’m afraid that the generalizers will have to get accustomed to sulfur. It just takes a couple of thousand years, after all.
 <h2>Who will be damned next?</h2>
 In the next circle of the SQL Server hell we will meet the shaky typers – the poor souls that chose the wrong data types for their columns. Stay tuned for more!
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-8028" class="archived-comment"><article><header><strong>suxstellino (Alessandro Alpi)</strong> <time datetime="2015-06-25T07:26:23Z">June 25, 2015 at 08:26</time></header><section class="archived-comment-content">Reblogged this on <a href="https://suxstellino.wordpress.com/2015/06/25/sql-server-infernals-circle-2-generalizers/" rel="nofollow ugc noopener noreferrer">Alessandro Alpi's Blog</a>.</section></article></li></ol></details>
+</div>

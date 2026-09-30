@@ -188,3 +188,7 @@ Here’s the final result:
 <a href="/wp-content/uploads/2011/10/loremipsum2.png"><img src="/wp-content/uploads/2011/10/loremipsum2.png" alt="" title="LoremIpsum2" width="604" height="426" class="alignnone size-full wp-image-357" /></a>
 
 With a little of PIVOT, UNPIVOT and FOR XML you can achieve really surprising results, you just need to unleash your creativity.
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (2)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-943" class="archived-comment"><article><header><strong>lukaseder</strong> <time datetime="2011-10-19T18:36:28Z">October 19, 2011 at 19:36</time></header><section class="archived-comment-content">That really is creative. Very nicely explained!<br>I wonder though, if someone reading this SQL statement will easily understand what's going on... :-)</section></article></li><li id="wordpress-comment-944" class="archived-comment"><article><header><strong>spaghettidba</strong> <time datetime="2011-10-19T21:41:45Z">October 19, 2011 at 22:41</time></header><section class="archived-comment-content">Thanks. On readability... well,that's what comments and formatting are for. :-)</section></article></li></ol></details>
+</div>

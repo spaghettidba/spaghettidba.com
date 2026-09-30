@@ -62,3 +62,7 @@ Windows Registry Editor Version 5.00[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo
 <p style="text-align:left;">However, the GUI is much more readable now. For instance, look at the difference in object explorer: (click on the image to open fullsize and see the difference)</p>
 <p style="text-align:left;"><a href="/wp-content/uploads/2016/08/objexp.png"><img class="alignnone wp-image-1142 size-full" src="/wp-content/uploads/2016/08/objexp.png" alt="objexp" width="604" height="285" /></a></p>
 <p style="text-align:left;">Now that your favourite tool is working in high DPI displays, nothing is holding you back from buying one of those fancy 4K laptops!</p>
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-11716" class="archived-comment"><article><header><strong>Matthew Davidian</strong> <time datetime="2017-08-22T17:37:00Z">August 22, 2017 at 18:37</time></header><section class="archived-comment-content">I just installed SSMS 17.2 and it still defaults to bitmap scaling.  The fix described above still works, and SSMS goes from "Unaware" to "System Aware" for the DPI Awareness setting in Process Explorer.  It would be nice to see SSMS updated with per monitor DPI awareness though.</section></article></li></ol></details>
+</div>

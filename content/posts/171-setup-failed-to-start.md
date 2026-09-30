@@ -38,3 +38,7 @@ sql server Task did not appear to start on machine <machine_name> 267015
 Needless to say that one of my co-workers was logged on the desktop of one of the passive nodes.  So, if you need another good reason to lock everyone out of your servers’ desktop, here it is.
 
 After resetting the offending session, remember to log on to all the passive nodes and kill the zombie setup processes you may have left. Also, delete the scheduled tasks from each node.
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-7501" class="archived-comment"><article><header><strong>santana</strong> <time datetime="2015-02-22T06:27:48Z">February 22, 2015 at 07:27</time></header><section class="archived-comment-content">And What will happen if there is no logged session over the nodes should I move the instances to other servers (counting the foreign connections to the server )</section></article></li></ol></details>
+</div>

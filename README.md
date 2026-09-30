@@ -10,6 +10,10 @@ The site uses Beautiful Hugo v3.3.0 as a Git submodule. This release is pinned t
 git submodule update --init --recursive
 ```
 
+## Comments
+
+Posts use giscus with the `General` GitHub Discussions category in `spaghettidba/spaghettidba.com`. The widget maps discussions by pathname, so the existing post permalinks remain unchanged. Historical WordPress comments are imported as collapsed, read-only threads that retain their original authors, dates, and reply nesting, including on pages where archived comments exist. Pingbacks and trackbacks are excluded.
+
 ## Run locally
 
 Install Hugo, then start the development server:

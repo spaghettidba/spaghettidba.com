@@ -36,3 +36,7 @@ Stay tuned for your walk through the SQL Server hell!
 
 Your pilgrim's guide,
 <em>The SpaghettiDBA</em>
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (3)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-7954" class="archived-comment"><article><header><strong>Jeff Moden</strong> <time datetime="2015-06-13T22:24:22Z">June 13, 2015 at 23:24</time></header><section class="archived-comment-content">Ah... Great Idea.  This should be very good.  I can't wait, ol' friend.</section></article></li><li id="wordpress-comment-7966" class="archived-comment"><article><header><strong>suxstellino (Alessandro Alpi)</strong> <time datetime="2015-06-16T16:21:10Z">June 16, 2015 at 17:21</time></header><section class="archived-comment-content">Great Gianluca! I was waiting for this post! ;-)</section></article></li><li id="wordpress-comment-7967" class="archived-comment"><article><header><strong>suxstellino (Alessandro Alpi)</strong> <time datetime="2015-06-16T16:22:30Z">June 16, 2015 at 17:22</time></header><section class="archived-comment-content">Reblogged this on <a href="https://suxstellino.wordpress.com/2015/06/16/announcing-sql-server-infernals/" rel="nofollow ugc noopener noreferrer">Alessandro Alpi's Blog</a> and commented: <br>Thanks to Gianluca Sartori (@spaghettidba)</section></article></li></ol></details>
+</div>

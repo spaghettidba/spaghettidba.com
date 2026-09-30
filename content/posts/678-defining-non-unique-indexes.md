@@ -203,3 +203,7 @@ Again, the actual execution plan confirms that a better estimation is available:
 <a href="/wp-content/uploads/2013/06/plan_2.png"><img class="alignnone size-full wp-image-679" alt="plan_2" src="/wp-content/uploads/2013/06/plan_2.png" width="604" height="194" /></a>
 
 The lack of statistics has always been the most significant difference between table variables and temporary tables and SQL2014 doesn't appear to change the rules (yet).
+
+<div class="archived-comments-container">
+<details class="archived-comments"><summary>Archived WordPress comments (1)</summary><p class="archived-comments-note">Historical comments from the original site; this archive is read-only.</p><ol class="archived-comments-list"><li id="wordpress-comment-1729" class="archived-comment"><article><header><strong>Chris Dorch</strong> <time datetime="2013-06-28T16:20:41Z">June 28, 2013 at 17:20</time></header><section class="archived-comment-content">Nice info there... I have the 2014 bits, but been too busy to install and play!</section></article></li></ol></details>
+</div>
