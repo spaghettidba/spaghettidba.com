@@ -213,3 +213,9 @@ body {
     font-size: 13px;
   }
 }
+
+@media (max-width: 365px) {
+  .header-section.has-img .intro-header.no-img {
+    display: none;
+  }
+}
