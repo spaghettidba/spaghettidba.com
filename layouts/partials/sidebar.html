@@ -1,0 +1,61 @@
+{{ $posts := where .RegularPages "Section" "posts" }}
+{{ $archives := where .Pages "Type" "monthly-archive" }}
+<details class="blog-explorer" open>
+  <summary>Explore the blog</summary>
+  <div class="blog-explorer-content">
+    <section class="sidebar-section">
+      <h2>{{ with .GetPage "/categories" }}<a href="{{ .RelPermalink }}">Categories</a>{{ end }}</h2>
+      <ul class="sidebar-links">
+        {{ range .Taxonomies.categories.ByCount }}
+          <li>
+            <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} <span class="sidebar-count">({{ .Count }})</span></a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+
+    <section class="sidebar-section">
+      <h2>Series &amp; projects</h2>
+      <ul class="sidebar-links">
+        {{ range .Menus.explore }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+        {{ with .GetPage "/tags" }}
+          <li><a href="{{ .RelPermalink }}">All tags</a></li>
+        {{ end }}
+      </ul>
+    </section>
+
+    {{ with $archives }}
+      <section class="sidebar-section">
+        <h2>Archive</h2>
+        {{ range .GroupByDate "2006" "desc" }}
+          {{ $yearPosts := where $posts "Date.Year" (int .Key) }}
+          <details class="sidebar-year">
+            <summary>{{ .Key }} <span class="sidebar-count">({{ len $yearPosts }})</span></summary>
+            <ul class="sidebar-links">
+              {{ range .Pages.ByDate.Reverse }}
+                <li>
+                  <a href="{{ .RelPermalink }}">{{ .Date.Format "January" }} <span class="sidebar-count">({{ len (where $yearPosts "Date.Month" .Date.Month) }})</span></a>
+                </li>
+              {{ end }}
+            </ul>
+          </details>
+        {{ end }}
+      </section>
+    {{ end }}
+
+    <section class="sidebar-section">
+      <h2>Follow the blog</h2>
+      <ul class="sidebar-links sidebar-feeds">
+        {{ with .Home.OutputFormats.Get "RSS" }}
+          <li><a href="{{ .RelPermalink }}" type="application/rss+xml">RSS</a></li>
+        {{ end }}
+        {{ with .Home.OutputFormats.Get "Atom" }}
+          <li><a href="{{ .RelPermalink }}" type="application/atom+xml">Atom</a></li>
+        {{ end }}
+      </ul>
+    </section>
+  </div>
+</details>
+<script src="{{ "js/sidebar.js" | relURL }}" defer></script>

@@ -17,6 +17,19 @@ The original two-cent coin favicon is stored locally in `static/favicon.ico`.
 localhost favicons. Its source is the site's original
 [WordPress icon](https://secure.gravatar.com/blavatar/64f18f6dec19bce4b1338f7791d4ef5e?s=32).
 
+Local list templates keep the 750px reading column centered in the viewport,
+with a navigation sidebar in the right-hand margin at widths of 1200px and up.
+A native expandable "Explore the blog" panel sits above the listings on smaller screens. Without
+JavaScript the panel stays expanded. It lists categories, the `menu.explore`
+series/project links, monthly archives grouped by year, and both feeds. Counts
+come from published content; archive links use the generated monthly pages.
+Individual articles and standalone pages retain their full reading width. These
+overrides and `static/css/content.css` leave the theme submodule unchanged.
+
+On screens at least 768px wide, pages with a banner place the transparent menu
+over the image, with white links. The theme's existing `top-nav-short` scroll
+state gives it a blue background. Mobile and banner-free pages are unchanged.
+
 ## Comments
 
 Posts use giscus with the `General` GitHub Discussions category in `spaghettidba/spaghettidba.com`. The widget maps discussions by pathname, so the existing post permalinks remain unchanged. Historical WordPress comments are imported as collapsed, read-only threads that retain their original authors, dates, and reply nesting, including on pages where archived comments exist. Pingbacks and trackbacks are excluded.

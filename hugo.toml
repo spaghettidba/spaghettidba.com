@@ -51,6 +51,21 @@ enableRobotsTXT = true
   rel = "alternate"
 
 [menu]
+  [[menu.explore]]
+    name = "XESmartTarget recipes"
+    pageRef = "/posts/1554-10-dba-recipes-with-xesmarttarget"
+    weight = 1
+
+  [[menu.explore]]
+    name = "XESmartTarget"
+    pageRef = "/tags/xesmarttarget"
+    weight = 2
+
+  [[menu.explore]]
+    name = "WorkloadTools"
+    pageRef = "/tags/workloadtools"
+    weight = 3
+
   [[menu.main]]
     name = "Blog"
     url = "/"
@@ -65,11 +80,6 @@ enableRobotsTXT = true
     name = "RSS"
     url = "/index.xml"
     weight = 3
-
-  [[menu.main]]
-    name = "Atom"
-    url = "/atom.xml"
-    weight = 4
 
 [markup.goldmark.renderer]
   unsafe = true
