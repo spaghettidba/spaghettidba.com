@@ -1,11 +1,14 @@
 baseURL = "https://spaghettidba.com/"
-languageCode = "en-us"
+locale = "en-US"
 title = "spaghettidba"
 theme = "beautifulhugo"
 enableRobotsTXT = true
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
+
+[module.hugoVersion]
+  min = "0.167.0"
+
+[services.rss]
+  limit = 10
 
 [params]
   description = "Italian recipes for your daily database cooking"
@@ -23,16 +26,28 @@ pygmentsCodefencesGuessSyntax = true
 [[params.bigimg]]
   src = "/images/spaghettidba-header.png"
 
-[author]
+[params.author]
   name = "spaghettidba"
   website = "https://spaghettidba.com"
 
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
+  categories = "/category/:slug/"
 
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "Atom"]
+
+[mediaTypes."application/atom+xml"]
+  suffixes = ["xml"]
+
+[outputFormats.Atom]
+  mediaType = "application/atom+xml"
+  baseName = "atom"
+  rel = "alternate"
 
 [menu]
   [[menu.main]]
@@ -45,5 +60,19 @@ pygmentsCodefencesGuessSyntax = true
     url = "/about/"
     weight = 2
 
+  [[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 3
+
+  [[menu.main]]
+    name = "Atom"
+    url = "/atom.xml"
+    weight = 4
+
 [markup.goldmark.renderer]
   unsafe = true
+
+[markup.highlight]
+  guessSyntax = true
+  noClasses = false

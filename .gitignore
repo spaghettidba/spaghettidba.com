@@ -1,4 +1,5 @@
 /public/
+/content/archives/
 /resources/_gen/
 .hugo_build.lock
 __pycache__/

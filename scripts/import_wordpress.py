@@ -286,6 +286,8 @@ def parse_export(path):
             "slug": item.findtext("wp:post_name", default="", namespaces=NAMESPACES),
             "date_gmt": item.findtext("wp:post_date_gmt", default="", namespaces=NAMESPACES),
             "date": item.findtext("wp:post_date", default="", namespaces=NAMESPACES),
+            "guid": item.findtext("guid", default=""),
+            "modified_gmt": item.findtext("wp:post_modified_gmt", default="", namespaces=NAMESPACES),
             "content": item.findtext("content:encoded", default="", namespaces=NAMESPACES),
             "excerpt": item.findtext("excerpt:encoded", default="", namespaces=NAMESPACES),
             "categories": sorted(set(terms["category"])),
@@ -300,6 +302,28 @@ def parse_export(path):
 
 def source_url(item):
     return item["link"]
+
+
+def write_feed_metadata(posts):
+    target = ROOT / "data" / "wordpress_feed_entries.json"
+    existing = json.loads(target.read_text(encoding="utf-8")) if target.exists() else {}
+    entries = {}
+    for post in posts:
+        path = source_path(post)
+        guid = existing.get(path, {}).get("guid") or post["guid"]
+        if not guid:
+            raise ValueError(f"No WordPress feed GUID for published post: {path}")
+        entry = {"guid": guid}
+        for key, field in (("published", "date_gmt"), ("updated", "modified_gmt")):
+            value = post[field]
+            if value and not value.startswith("0000-"):
+                entry[key] = datetime.strptime(value, "%Y-%m-%d %H:%M:%S").isoformat() + "Z"
+        entries[path] = entry
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(
+        json.dumps(entries, indent=2, ensure_ascii=True, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
 
 
 def source_path(item):
@@ -576,6 +600,7 @@ def main():
     )
     args = parser.parse_args()
     posts, pages, media = parse_export(args.export)
+    write_feed_metadata(posts)
 
     internal_paths = {}
     for item in posts + pages:

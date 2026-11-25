@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-unstyled">
+          {{ $month := .Params.archive_month }}
+          {{ range (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+            {{ if eq (.Date.Format "2006-01") $month }}
+              <li>
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $.Site.Params.dateFormat }}</time>
+                &mdash; <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+{{ end }}

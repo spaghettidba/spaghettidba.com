@@ -1,0 +1,15 @@
+{{- $posts := where .Site.RegularPages "Section" "posts" -}}
+{{- $pages := where .RegularPages "Section" "posts" -}}
+{{- if .IsHome -}}
+  {{- $pages = $posts -}}
+{{- else if .Params.feed_posts -}}
+  {{- $pages = where $posts "RelPermalink" "in" .Params.feed_posts -}}
+{{- else if .Params.feed_categories -}}
+  {{- $pages = where $posts "Params.categories" "intersect" .Params.feed_categories -}}
+{{- end -}}
+{{- $pages = $pages.ByDate.Reverse -}}
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+  {{- $pages = first $limit $pages -}}
+{{- end -}}
+{{- return $pages -}}

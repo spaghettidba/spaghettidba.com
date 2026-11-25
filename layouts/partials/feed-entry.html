@@ -1,0 +1,11 @@
+{{- $metadata := index hugo.Data.wordpress_feed_entries .RelPermalink -}}
+{{- $guid := .Permalink -}}
+{{- $published := .PublishDate -}}
+{{- $updated := .Lastmod -}}
+{{- with $metadata -}}
+  {{- $guid = .guid -}}
+  {{- with .published }}{{ $published = time.AsTime . }}{{ end -}}
+  {{- with .updated }}{{ $updated = time.AsTime . }}{{ end -}}
+{{- end -}}
+{{- $content := index (split .Content "<div class=\"archived-comments-container\">") 0 -}}
+{{- return (dict "guid" $guid "published" $published "updated" $updated "content" $content) -}}

@@ -1,0 +1,607 @@
+{
+  "/2010/12/30/14/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=14",
+    "published": "2010-12-30T10:27:22Z",
+    "updated": "2010-12-30T13:25:05Z"
+  },
+  "/2011/03/03/a-short-circuiting-edge-case/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=46",
+    "published": "2011-03-03T22:40:52Z",
+    "updated": "2011-04-01T21:26:50Z"
+  },
+  "/2011/03/09/oracle-bug-unpivot-returns-wrong-data-for-non-unpivoted-columns/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=55",
+    "published": "2011-03-09T09:08:27Z",
+    "updated": "2011-03-09T10:07:45Z"
+  },
+  "/2011/03/10/make-your-sysadmin-windows-user-smarter/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=73",
+    "published": "2011-03-10T09:54:00Z",
+    "updated": "2013-01-04T08:47:00Z"
+  },
+  "/2011/05/20/trace-flag-3659/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=157",
+    "published": "2011-05-20T21:15:01Z",
+    "updated": "2011-05-20T21:16:56Z"
+  },
+  "/2011/05/26/changing-server-collation/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=160",
+    "published": "2011-05-26T12:25:21Z",
+    "updated": "2011-05-31T15:27:57Z"
+  },
+  "/2011/05/27/setup-failed-to-start/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=171",
+    "published": "2011-05-27T14:30:22Z",
+    "updated": "2011-05-27T15:06:42Z"
+  },
+  "/2011/06/09/setting-up-linked-servers-with-an-out-of-process-oledb-provider/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=182",
+    "published": "2011-06-09T09:25:12Z",
+    "updated": "2011-06-09T10:46:41Z"
+  },
+  "/2011/06/28/the-spaghetti-western-database/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=190",
+    "published": "2011-06-28T16:15:56Z",
+    "updated": "2011-06-28T16:22:52Z"
+  },
+  "/2011/07/06/backup-all-user-databases-with-tdpsq/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=196",
+    "published": "2011-07-06T13:49:06Z",
+    "updated": "2011-07-07T14:59:14Z"
+  },
+  "/2011/07/08/my-stored-procedure-code-template/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=210",
+    "published": "2011-07-08T15:51:46Z",
+    "updated": "2011-09-23T09:35:56Z"
+  },
+  "/2011/07/15/an-annoying-bug-in-database-mail-configuration-wizard/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=222",
+    "published": "2011-07-15T13:36:15Z",
+    "updated": "2011-07-15T13:36:15Z"
+  },
+  "/2011/07/20/oracle-does-parallel_degree_limit-really-limit-the-dop/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=235",
+    "published": "2011-07-20T14:04:48Z",
+    "updated": "2012-10-29T10:12:19Z"
+  },
+  "/2011/07/27/table-level-check-constraints/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=260",
+    "published": "2011-07-27T21:12:00Z",
+    "updated": "2011-09-29T08:33:35Z"
+  },
+  "/2011/07/29/exceptional-dba-awards-2011/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=277",
+    "published": "2011-07-29T13:28:34Z",
+    "updated": "2011-08-02T20:51:01Z"
+  },
+  "/2011/08/03/enforcing-complex-constraints-with-indexed-views/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=298",
+    "published": "2011-08-03T15:55:33Z",
+    "updated": "2011-08-04T07:55:09Z"
+  },
+  "/2011/09/09/a-better-sp_msforeachdb/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=317",
+    "published": "2011-09-09T16:53:17Z",
+    "updated": "2018-03-07T10:41:09Z"
+  },
+  "/2011/09/14/jeff-moden-is-the-exceptional-dba-2011/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=323",
+    "published": "2011-09-14T12:06:42Z",
+    "updated": "2011-09-14T12:06:42Z"
+  },
+  "/2011/09/19/typing-the-backtick-key-on-non-us-keyboards/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=329",
+    "published": "2011-09-19T21:47:20Z",
+    "updated": "2019-03-22T00:15:27Z"
+  },
+  "/2011/10/05/formatting-dates-in-t-sql/": {
+    "guid": "http://spaghettidba.com/?p=353",
+    "published": "2011-10-05T16:10:53Z",
+    "updated": "2012-06-18T12:40:10Z"
+  },
+  "/2011/10/13/concatenating-multiple-columns-across-rows/": {
+    "guid": "http://spaghettidba.com/?p=355",
+    "published": "2011-10-13T16:22:23Z",
+    "updated": "2011-10-13T16:22:23Z"
+  },
+  "/2011/10/19/runcore-msata-ssd-on-dell-precision-laptops/": {
+    "guid": "http://spaghettidba.com/?p=366",
+    "published": "2011-10-19T15:32:04Z",
+    "updated": "2011-12-01T08:26:10Z"
+  },
+  "/2011/11/16/discovering-the-output-of-dbcc-commands/": {
+    "guid": "http://spaghettidba.com/?p=384",
+    "published": "2011-11-16T14:54:03Z",
+    "updated": "2011-11-16T16:50:04Z"
+  },
+  "/2011/11/28/email-alert-dbcc-checkdb/": {
+    "guid": "http://spaghettidba.com/?p=399",
+    "published": "2011-11-28T22:55:22Z",
+    "updated": "2018-03-07T10:39:26Z"
+  },
+  "/2011/12/29/mirrored-backups-a-usefu-feature/": {
+    "guid": "http://spaghettidba.wordpress.com/?p=419",
+    "published": "2011-12-29T15:56:28Z",
+    "updated": "2011-12-30T11:48:59Z"
+  },
+  "/2012/01/03/my-first-year-in-blogging/": {
+    "guid": "http://spaghettidba.com/?p=440",
+    "published": "2012-01-03T10:16:45Z",
+    "updated": "2012-01-03T10:16:45Z"
+  },
+  "/2012/03/06/sql-server-2012-rt/": {
+    "guid": "http://spaghettidba.com/?p=447",
+    "published": "2012-03-06T18:53:18Z",
+    "updated": "2012-03-06T18:53:18Z"
+  },
+  "/2012/03/15/how-to-eat-a-sql-elephant/": {
+    "guid": "http://spaghettidba.com/?p=451",
+    "published": "2012-03-15T13:04:12Z",
+    "updated": "2012-03-20T11:00:13Z"
+  },
+  "/2012/03/23/sql-server-and-custom-date-formats/": {
+    "guid": "http://spaghettidba.com/?p=480",
+    "published": "2012-03-23T11:49:47Z",
+    "updated": "2018-03-07T10:48:23Z"
+  },
+  "/2012/04/05/hide-service-accounts-from-windows-logon-screen/": {
+    "guid": "http://spaghettidba.com/?p=492",
+    "published": "2012-04-05T09:34:10Z",
+    "updated": "2012-04-05T10:20:45Z"
+  },
+  "/2012/06/27/replay-a-t-sql-batch-against-all-databases/": {
+    "guid": "http://spaghettidba.com/?p=508",
+    "published": "2012-06-27T20:25:32Z",
+    "updated": "2012-06-27T20:50:05Z"
+  },
+  "/2012/11/07/convert-trace-file-sqlserver2012-2008r/": {
+    "guid": "http://spaghettidba.com/?p=525",
+    "published": "2012-11-06T23:55:45Z",
+    "updated": "2012-11-09T08:43:39Z"
+  },
+  "/2012/11/08/more-on-converting-trace-files/": {
+    "guid": "http://spaghettidba.com/?p=538",
+    "published": "2012-11-08T12:48:37Z",
+    "updated": "2012-11-08T17:52:26Z"
+  },
+  "/2012/11/22/replaying-workloads-distributed-replay/": {
+    "guid": "http://spaghettidba.com/?p=547",
+    "published": "2012-11-22T19:00:40Z",
+    "updated": "2012-11-23T08:53:54Z"
+  },
+  "/2013/01/09/do-you-need-sysadmin-rights-to-backup-a-database/": {
+    "guid": "http://spaghettidba.com/?p=570",
+    "published": "2013-01-09T21:57:51Z",
+    "updated": "2013-01-09T22:16:50Z"
+  },
+  "/2013/02/08/manual-log-shipping-with-powershell/": {
+    "guid": "http://spaghettidba.com/?p=582",
+    "published": "2013-02-08T12:57:31Z",
+    "updated": "2014-09-11T08:45:53Z"
+  },
+  "/2013/02/08/using-querytraceon-in-plan-guides/": {
+    "guid": "http://spaghettidba.com/?p=592",
+    "published": "2013-02-08T17:34:02Z",
+    "updated": "2013-02-08T17:34:02Z"
+  },
+  "/2013/02/13/extracting-dacpacs-from-all-databases-with-powershell/": {
+    "guid": "http://spaghettidba.com/?p=602",
+    "published": "2013-02-13T17:20:34Z",
+    "updated": "2013-02-13T17:25:32Z"
+  },
+  "/2013/02/26/discovering-resultset-definition-of-dbcc-commands-sql-server-2102/": {
+    "guid": "http://spaghettidba.com/?p=607",
+    "published": "2013-02-25T23:56:49Z",
+    "updated": "2013-02-26T10:46:25Z"
+  },
+  "/2013/02/27/dba_runcheckdb-v2012/": {
+    "guid": "http://spaghettidba.com/?p=617",
+    "published": "2013-02-27T19:48:44Z",
+    "updated": "2013-02-27T19:57:19Z"
+  },
+  "/2013/03/19/data-collector-clustering-woes/": {
+    "guid": "http://spaghettidba.com/?p=624",
+    "published": "2013-03-19T22:46:57Z",
+    "updated": "2016-09-15T08:51:53Z"
+  },
+  "/2013/03/22/move-system-databases-to-the-default-data-and-log-paths/": {
+    "guid": "http://spaghettidba.com/?p=632",
+    "published": "2013-03-22T12:02:03Z",
+    "updated": "2013-04-19T20:20:53Z"
+  },
+  "/2013/04/22/a-viable-alternative-to-dynamic-sql-in-administration-scripts/": {
+    "guid": "http://spaghettidba.com/?p=642",
+    "published": "2013-04-22T16:53:41Z",
+    "updated": "2013-04-23T16:48:20Z"
+  },
+  "/2013/06/25/sql-server-2014-ctp1-available-for-download/": {
+    "guid": "http://spaghettidba.com/?p=658",
+    "published": "2013-06-25T07:44:36Z",
+    "updated": "2013-06-25T07:48:27Z"
+  },
+  "/2013/06/28/defining-non-unique-indexes/": {
+    "guid": "http://spaghettidba.com/?p=678",
+    "published": "2013-06-28T16:02:48Z",
+    "updated": "2013-06-28T18:17:15Z"
+  },
+  "/2013/09/09/check-sql-server-logins-with-weak-password/": {
+    "guid": "http://spaghettidba.com/?p=689",
+    "published": "2013-09-09T17:22:10Z",
+    "updated": "2013-09-09T17:22:10Z"
+  },
+  "/2013/10/24/error-upgrading-mdw-from-2008r2-to-2012/": {
+    "guid": "http://spaghettidba.com/?p=698",
+    "published": "2013-10-24T20:48:49Z",
+    "updated": "2013-10-24T20:52:14Z"
+  },
+  "/2013/10/24/sql-server-services-are-gone-after-upgrading-to-windows-8-1/": {
+    "guid": "http://spaghettidba.com/?p=693",
+    "published": "2013-10-24T16:02:10Z",
+    "updated": "2013-10-24T16:03:02Z"
+  },
+  "/2013/10/29/ten-features-you-had-in-profiler-that-are-missing-in-extended-events/": {
+    "guid": "http://spaghettidba.com/?p=703",
+    "published": "2013-10-28T23:37:56Z",
+    "updated": "2013-10-29T22:45:18Z"
+  },
+  "/2013/10/31/copy-user-databases-to-a-different-server-with-powershell/": {
+    "guid": "http://spaghettidba.com/?p=726",
+    "published": "2013-10-31T17:08:46Z",
+    "updated": "2013-10-31T17:08:46Z"
+  },
+  "/2014/01/02/2013-in-review/": {
+    "guid": "http://spaghettidba.com/?p=738",
+    "published": "2014-01-02T14:50:48Z",
+    "updated": "2014-01-02T14:50:48Z"
+  },
+  "/2014/01/16/open-ssms-query-results-in-excel-with-a-single-click/": {
+    "guid": "http://spaghettidba.com/?p=742",
+    "published": "2014-01-15T23:58:32Z",
+    "updated": "2014-01-16T02:22:45Z"
+  },
+  "/2014/01/22/copy_only-backups-and-log-shipping/": {
+    "guid": "http://spaghettidba.com/?p=757",
+    "published": "2014-01-22T18:44:27Z",
+    "updated": "2014-01-22T18:44:27Z"
+  },
+  "/2014/01/23/sql-server-agent-in-express-edition/": {
+    "guid": "http://spaghettidba.com/?p=764",
+    "published": "2014-01-23T18:38:40Z",
+    "updated": "2014-01-23T18:38:40Z"
+  },
+  "/2014/01/29/non-unique-indexes-that-should-be-unique/": {
+    "guid": "http://spaghettidba.com/?p=769",
+    "published": "2014-01-29T18:21:14Z",
+    "updated": "2014-01-29T18:21:14Z"
+  },
+  "/2014/01/30/non-unique-indexes-that-could-be-unique/": {
+    "guid": "http://spaghettidba.com/?p=777",
+    "published": "2014-01-30T14:45:30Z",
+    "updated": "2014-01-30T14:45:30Z"
+  },
+  "/2014/02/03/verdasys-digital-guardian-and-sql-server-setup/": {
+    "guid": "http://spaghettidba.com/?p=780",
+    "published": "2014-02-03T19:15:25Z",
+    "updated": "2014-02-03T21:51:07Z"
+  },
+  "/2014/03/14/uniquifiers-all-rows-or-the-duplicate-keys-only/": {
+    "guid": "http://spaghettidba.com/?p=791",
+    "published": "2014-03-14T17:39:49Z",
+    "updated": "2014-03-17T21:26:43Z"
+  },
+  "/2014/04/18/hangout-18-with-boris-hristov/": {
+    "guid": "http://spaghettidba.com/?p=801",
+    "published": "2014-04-18T16:19:09Z",
+    "updated": "2014-04-18T16:19:09Z"
+  },
+  "/2014/07/22/announcing-extendedtsqlcollector/": {
+    "guid": "http://spaghettidba.com/?p=809",
+    "published": "2014-07-22T17:04:26Z",
+    "updated": "2014-07-22T17:04:26Z"
+  },
+  "/2014/09/05/database-free-space-monitoring-the-right-way/": {
+    "guid": "http://spaghettidba.com/?p=820",
+    "published": "2014-09-05T14:28:03Z",
+    "updated": "2018-03-07T10:11:23Z"
+  },
+  "/2014/09/25/installing-sql-server-2014-language-reference-help-from-disk/": {
+    "guid": "http://spaghettidba.com/?p=836",
+    "published": "2014-09-25T16:24:19Z",
+    "updated": "2014-09-25T16:32:49Z"
+  },
+  "/2014/11/13/another-good-reason-to-avoid-auto_close/": {
+    "guid": "http://spaghettidba.com/?p=851",
+    "published": "2014-11-13T18:10:09Z",
+    "updated": "2014-11-13T18:10:09Z"
+  },
+  "/2014/12/12/monitoring-blocking-and-deadlocking-with-extended-t-sql-collector/": {
+    "guid": "http://spaghettidba.com/?p=854",
+    "published": "2014-12-12T17:29:25Z",
+    "updated": "2014-12-13T08:22:10Z"
+  },
+  "/2015/01/02/im-an-mvp-now-what/": {
+    "guid": "http://spaghettidba.com/?p=872",
+    "published": "2015-01-01T23:36:16Z",
+    "updated": "2015-01-01T23:43:05Z"
+  },
+  "/2015/01/07/the-big-disconnect-with-connect/": {
+    "guid": "http://spaghettidba.com/?p=877",
+    "published": "2015-01-07T18:58:35Z",
+    "updated": "2015-01-07T18:58:35Z"
+  },
+  "/2015/01/29/installing-multiple-default-instances-on-a-single-server/": {
+    "guid": "http://spaghettidba.com/?p=881",
+    "published": "2015-01-29T18:17:03Z",
+    "updated": "2015-01-30T09:17:41Z"
+  },
+  "/2015/02/02/blame-it-on-connect/": {
+    "guid": "http://spaghettidba.com/?p=893",
+    "published": "2015-02-02T17:34:00Z",
+    "updated": "2015-02-02T17:34:52Z"
+  },
+  "/2015/02/12/please-throw-this-hardware-at-the-problem/": {
+    "guid": "http://spaghettidba.com/?p=902",
+    "published": "2015-02-12T19:30:52Z",
+    "updated": "2015-02-12T19:30:41Z"
+  },
+  "/2015/02/20/speaking-at-sqlsaturday-pordenone/": {
+    "guid": "http://spaghettidba.com/?p=905",
+    "published": "2015-02-19T23:28:52Z",
+    "updated": "2015-02-19T23:29:53Z"
+  },
+  "/2015/03/02/should-i-check-tempdb-for-corruption/": {
+    "guid": "http://spaghettidba.com/?p=908",
+    "published": "2015-03-02T17:04:39Z",
+    "updated": "2015-03-02T17:04:39Z"
+  },
+  "/2015/04/20/tracking-table-usage-and-identifying-unused-objects/": {
+    "guid": "http://spaghettidba.com/?p=919",
+    "published": "2015-04-20T09:49:57Z",
+    "updated": "2015-12-10T11:44:19Z"
+  },
+  "/2015/04/24/how-to-post-a-t-sql-question-on-a-public-forum/": {
+    "guid": "http://spaghettidba.com/?p=944",
+    "published": "2015-04-24T17:42:10Z",
+    "updated": "2016-07-05T14:28:25Z"
+  },
+  "/2015/05/18/counting-the-number-of-rows-in-a-table/": {
+    "guid": "http://spaghettidba.com/?p=961",
+    "published": "2015-05-18T17:10:08Z",
+    "updated": "2015-05-18T17:10:08Z"
+  },
+  "/2015/05/26/native-client-aliases-dont-like-trailing-spaces/": {
+    "guid": "http://spaghettidba.com/?p=964",
+    "published": "2015-05-26T22:13:13Z",
+    "updated": "2015-05-26T22:13:13Z"
+  },
+  "/2015/06/09/announcing-sql-server-infernals/": {
+    "guid": "http://spaghettidba.com/?p=972",
+    "published": "2015-06-09T17:29:44Z",
+    "updated": "2015-06-09T17:29:44Z"
+  },
+  "/2015/06/17/sql-server-infernals-row-1-undernormalizers/": {
+    "guid": "http://spaghettidba.com/?p=989",
+    "published": "2015-06-17T16:34:32Z",
+    "updated": "2015-06-18T09:40:17Z"
+  },
+  "/2015/06/24/sql-server-infernals-circle-2-generalizers/": {
+    "guid": "http://spaghettidba.com/?p=999",
+    "published": "2015-06-24T22:10:18Z",
+    "updated": "2015-06-24T22:10:18Z"
+  },
+  "/2015/07/02/sql-server-infernals-circle-3-shaky-typers/": {
+    "guid": "http://spaghettidba.com/?p=1006",
+    "published": "2015-07-02T08:53:29Z",
+    "updated": "2015-07-02T08:53:29Z"
+  },
+  "/2015/07/07/sql-server-infernals-circle-4-anarchic-designers/": {
+    "guid": "http://spaghettidba.com/?p=1012",
+    "published": "2015-07-07T17:06:27Z",
+    "updated": "2015-07-08T06:27:46Z"
+  },
+  "/2015/07/17/sql-server-infernals-circle-5-inconsistent-baptists/": {
+    "guid": "http://spaghettidba.com/?p=1018",
+    "published": "2015-07-17T16:25:08Z",
+    "updated": "2015-07-17T22:51:14Z"
+  },
+  "/2015/07/31/sql-server-infernals-circle-6-environment-pollutors/": {
+    "guid": "http://spaghettidba.com/?p=1027",
+    "published": "2015-07-31T10:35:20Z",
+    "updated": "2015-07-31T13:20:40Z"
+  },
+  "/2015/10/14/ssms-in-high-dpi-displays-how-to-stop-the-madness/": {
+    "guid": "http://spaghettidba.com/?p=819",
+    "published": "2015-10-14T00:11:56Z",
+    "updated": "2015-10-14T08:22:58Z"
+  },
+  "/2016/02/23/an-annoying-bug-in-the-restore-dialog/": {
+    "guid": "http://spaghettidba.com/?p=1048",
+    "published": "2016-02-23T16:06:00Z",
+    "updated": "2016-02-23T16:06:00Z"
+  },
+  "/2016/03/18/weird-things-happen-with-windows-users/": {
+    "guid": "http://spaghettidba.com/?p=1057",
+    "published": "2016-03-18T10:48:44Z",
+    "updated": "2016-03-18T11:12:35Z"
+  },
+  "/2016/04/14/upcoming-speaking-engagements/": {
+    "guid": "http://spaghettidba.com/?p=1073",
+    "published": "2016-04-14T17:01:30Z",
+    "updated": "2016-04-14T17:01:30Z"
+  },
+  "/2016/06/30/my-feedback-on-my-pass-abstracts-feedback/": {
+    "guid": "http://spaghettidba.com/?p=1120",
+    "published": "2016-06-30T22:03:32Z",
+    "updated": "2016-07-01T08:49:55Z"
+  },
+  "/2016/08/18/ssms-2016-is-now-hidpi-ready/": {
+    "guid": "http://spaghettidba.com/?p=1134",
+    "published": "2016-08-18T14:15:18Z",
+    "updated": "2016-08-18T14:26:55Z"
+  },
+  "/2016/08/31/forumsurfer-a-rss-reader-for-the-sql-server-online-community/": {
+    "guid": "http://spaghettidba.com/?p=1149",
+    "published": "2016-08-31T16:10:52Z",
+    "updated": "2016-08-31T16:10:52Z"
+  },
+  "/2016/10/17/installing-sql-server-2016-language-reference-help-from-disk/": {
+    "guid": "http://spaghettidba.com/?p=1162",
+    "published": "2016-10-17T13:35:49Z",
+    "updated": "2016-10-18T10:29:37Z"
+  },
+  "/2017/02/27/upcoming-speaking-engagements-2/": {
+    "guid": "http://spaghettidba.com/?p=1211",
+    "published": "2017-02-27T17:24:53Z",
+    "updated": "2017-02-27T17:24:53Z"
+  },
+  "/2017/03/13/using-virtual-desktops-for-presentations/": {
+    "guid": "http://spaghettidba.com/?p=1278",
+    "published": "2017-03-13T16:30:45Z",
+    "updated": "2017-03-13T16:30:45Z"
+  },
+  "/2017/09/13/expensive-enterprise-backup-tools-a-survival-guide/": {
+    "guid": "http://spaghettidba.com/?p=1337",
+    "published": "2017-09-13T10:15:16Z",
+    "updated": "2017-09-18T08:39:18Z"
+  },
+  "/2017/10/19/introducing-xesmarttarget/": {
+    "guid": "http://spaghettidba.com/?p=1393",
+    "published": "2017-10-19T10:56:04Z",
+    "updated": "2017-10-19T10:56:04Z"
+  },
+  "/2017/11/15/how-to-enlarge-your-columns-with-no-downtime/": {
+    "guid": "http://spaghettidba.com/?p=1411",
+    "published": "2017-11-15T18:44:45Z",
+    "updated": "2017-11-15T21:36:20Z"
+  },
+  "/2017/12/19/recovering-the-psgallery-repository-behind-a-corporate-proxy/": {
+    "guid": "http://spaghettidba.com/?p=1444",
+    "published": "2017-12-19T13:44:45Z",
+    "updated": "2017-12-19T13:51:40Z"
+  },
+  "/2018/07/03/a-bug-in-merge-replication-with-filestream-data/": {
+    "guid": "http://spaghettidba.com/?p=1460",
+    "published": "2018-07-03T11:05:55Z",
+    "updated": "2018-07-03T15:56:04Z"
+  },
+  "/2019/02/15/benchmarking-with-workloadtools/": {
+    "guid": "http://spaghettidba.com/?p=1469",
+    "published": "2019-02-15T17:16:53Z",
+    "updated": "2019-02-26T11:51:46Z"
+  },
+  "/2019/02/26/workload-analysis-with-workloadtools/": {
+    "guid": "http://spaghettidba.com/?p=1479",
+    "published": "2019-02-26T18:53:32Z",
+    "updated": "2019-02-26T18:53:32Z"
+  },
+  "/2019/03/12/capturing-a-workload-with-workloadtools/": {
+    "guid": "http://spaghettidba.com/?p=1487",
+    "published": "2019-03-12T15:03:41Z",
+    "updated": "2019-03-12T15:09:54Z"
+  },
+  "/2019/03/20/generating-a-jupyter-notebook-for-glenn-berrys-diagnostic-queries-with-powershell/": {
+    "guid": "http://spaghettidba.com/?p=1493",
+    "published": "2019-03-20T19:35:46Z",
+    "updated": "2019-03-20T23:07:43Z"
+  },
+  "/2019/05/09/life-behind-a-proxy-server-downloading-content-for-ssms-help-viewer/": {
+    "guid": "http://spaghettidba.com/?p=1505",
+    "published": "2019-05-09T16:24:10Z",
+    "updated": "2019-05-09T16:28:27Z"
+  },
+  "/2019/06/20/workload-replay-with-workloadtools/": {
+    "guid": "http://spaghettidba.com/?p=1510",
+    "published": "2019-06-20T15:01:28Z",
+    "updated": "2019-06-20T15:35:53Z"
+  },
+  "/2019/08/16/troubleshooting-could-not-obtain-information-about-windows-nt-group-user/": {
+    "guid": "http://spaghettidba.com/?p=1517",
+    "published": "2019-08-16T14:00:48Z",
+    "updated": "2019-08-16T14:02:43Z"
+  },
+  "/2019/11/24/collecting-diagnostic-data-from-multiple-sql-server-instances-with-dbatools/": {
+    "guid": "http://spaghettidba.com/?p=1525",
+    "published": "2019-11-24T18:32:00Z",
+    "updated": "2019-11-24T18:32:00Z"
+  },
+  "/2020/03/03/performing-a-real-time-replay-with-workloadtools/": {
+    "guid": "http://spaghettidba.com/?p=1529",
+    "published": "2020-03-03T17:50:00Z",
+    "updated": "2020-03-04T10:18:49Z"
+  },
+  "/2020/03/31/replaying-workloads-to-a-different-database/": {
+    "guid": "http://spaghettidba.com/?p=1537",
+    "published": "2020-03-31T08:27:04Z",
+    "updated": "2020-03-31T08:27:04Z"
+  },
+  "/2020/12/18/sqlsaturday-is-dead-long-live-datasaturdays/": {
+    "guid": "http://spaghettidba.com/?p=1541",
+    "published": "2020-12-18T12:20:02Z",
+    "updated": "2020-12-18T14:39:42Z"
+  },
+  "/2022/02/21/10-dba-recipes-with-xesmarttarget/": {
+    "guid": "https://spaghettidba.com/?p=1554",
+    "published": "2022-02-21T09:00:00Z",
+    "updated": "2022-03-07T15:18:57Z"
+  },
+  "/2022/02/22/recipe-1-writing-extended-events-to-a-csv-file/": {
+    "guid": "https://spaghettidba.com/?p=1565",
+    "published": "2022-02-22T13:00:00Z",
+    "updated": "2022-02-22T17:28:09Z"
+  },
+  "/2022/02/23/recipe-2-writing-extended-events-to-a-table/": {
+    "guid": "https://spaghettidba.com/?p=1577",
+    "published": "2022-02-23T13:00:00Z",
+    "updated": "2022-02-21T09:24:18Z"
+  },
+  "/2022/02/24/recipe-3-merging-and-manipulating-events/": {
+    "guid": "http://spaghettidba.com/?p=1585",
+    "published": "2022-02-24T13:00:00Z",
+    "updated": "2022-02-21T09:25:06Z"
+  },
+  "/2022/02/25/recipe-4-sending-alerts-via-email/": {
+    "guid": "http://spaghettidba.com/?p=1603",
+    "published": "2022-02-25T13:00:00Z",
+    "updated": "2022-02-21T09:23:01Z"
+  },
+  "/2022/02/28/recipe-5-killing-blocking-spids/": {
+    "guid": "http://spaghettidba.com/?p=1613",
+    "published": "2022-02-28T13:00:00Z",
+    "updated": "2022-02-21T09:25:30Z"
+  },
+  "/2022/02/28/recipe-6-auditing-successful-logins/": {
+    "guid": "http://spaghettidba.com/?p=1620",
+    "published": "2022-02-28T13:05:07Z",
+    "updated": "2022-02-28T13:05:08Z"
+  },
+  "/2022/03/01/recipe-7-finding-unused-tables/": {
+    "guid": "http://spaghettidba.com/?p=1628",
+    "published": "2022-03-01T13:00:00Z",
+    "updated": "2022-03-02T10:23:49Z"
+  },
+  "/2022/03/02/recipe-8-analyzing-a-workload/": {
+    "guid": "http://spaghettidba.com/?p=1640",
+    "published": "2022-03-02T13:00:00Z",
+    "updated": "2022-03-02T14:13:28Z"
+  },
+  "/2022/03/03/recipe-9-capturing-queries-and-plans/": {
+    "guid": "http://spaghettidba.com/?p=1650",
+    "published": "2022-03-03T13:00:00Z",
+    "updated": "2022-02-21T10:03:12Z"
+  },
+  "/2022/03/04/recipe-10-writing-events-to-influxdb/": {
+    "guid": "http://spaghettidba.com/?p=1660",
+    "published": "2022-03-04T13:00:00Z",
+    "updated": "2022-02-21T10:09:36Z"
+  },
+  "/2023/06/10/code-signing-for-mere-mortals/": {
+    "guid": "http://spaghettidba.com/?p=1703",
+    "published": "2023-06-10T11:35:26Z",
+    "updated": "2023-06-10T11:35:26Z"
+  },
+  "/2023/09/16/datamoshpit/": {
+    "guid": "http://spaghettidba.com/?p=1727",
+    "published": "2023-09-16T07:54:57Z",
+    "updated": "2023-09-16T07:54:57Z"
+  }
+}
