@@ -12,6 +12,11 @@ removed. Initialize or update the pinned theme after cloning or pulling with:
 git submodule update --init --recursive
 ```
 
+The original two-cent coin favicon is stored locally in `static/favicon.ico`.
+`params.favicon` includes a version query to bypass cached WordPress or other
+localhost favicons. Its source is the site's original
+[WordPress icon](https://secure.gravatar.com/blavatar/64f18f6dec19bce4b1338f7791d4ef5e?s=32).
+
 ## Comments
 
 Posts use giscus with the `General` GitHub Discussions category in `spaghettidba/spaghettidba.com`. The widget maps discussions by pathname, so the existing post permalinks remain unchanged. Historical WordPress comments are imported as collapsed, read-only threads that retain their original authors, dates, and reply nesting, including on pages where archived comments exist. Pingbacks and trackbacks are excluded.

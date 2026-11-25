@@ -14,6 +14,7 @@ enableRobotsTXT = true
   description = "Italian recipes for your daily database cooking"
   subtitle = "Italian recipes for your daily database cooking"
   homeTitle = "spaghettidba"
+  favicon = "/favicon.ico?v=two-cents"
   mainSections = ["posts"]
   dateFormat = "January 2, 2006"
   comments = true
